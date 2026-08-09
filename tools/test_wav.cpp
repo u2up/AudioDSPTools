@@ -30,8 +30,8 @@ int main()
 
   // 16-bit, mono, 48 kHz PCM WAV containing one silent sample.
   constexpr std::array<unsigned char, 46> wavData{
-    'R', 'I', 'F', 'F', 38, 0, 0, 0, 'W', 'A', 'V', 'E', 'f', 'm', 't', ' ', 16, 0, 0, 0, 1, 0, 1,
-    0,   0x80, 0xBB, 0, 0, 0, 0x77, 1, 0, 2, 0, 16, 0, 'd', 'a', 't', 'a', 2, 0, 0, 0, 0, 0};
+    'R', 'I',  'F',  'F', 38, 0, 0,    0, 'W', 'A', 'V', 'E', 'f', 'm', 't', ' ', 16,  0, 0, 0, 1, 0, 1,
+    0,   0x80, 0xBB, 0,   0,  0, 0x77, 1, 0,   2,   0,   16,  0,   'd', 'a', 't', 'a', 2, 0, 0, 0, 0, 0};
 
   {
     std::ofstream wavFile(wavPath, std::ios::binary);
